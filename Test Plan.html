@@ -19,17 +19,17 @@
 					<li><a href="#Test_Items">Test Items</a></li>
 					<li><a href="#Features_To_Be_Tested">Features To Be Tested</a></li>
 					<li><a href="#Not_To_Be_Tested">Features Not To Be Tested</a></li>
-					<li><a href="#">Approach</a></li>
-					<li><a href="#">Item Pass/Fail Criteria</a></li>
-					<li><a href="#">Suspension Criteria And Resumption Requirements</a></li>
-					<li><a href="#">Test Deliverables</a></li>
-					<li><a href="#">Testing Tasks</a></li>
-					<li><a href="#">Environmental Needs</a></li>
-					<li><a href="#">Responsibilities</a></li>
-					<li><a href="#">Staffing And Training Needs</a></li>
-					<li><a href="#">Schedule</a></li>
-					<li><a href="#">Ricks And Contingencies</a></li>
-					<li><a href="#">Approvals</a></li>
+					<li><a href="#Approach">Approach</a></li>
+					<li><a href="#IPFCriteria">Item Pass/Fail Criteria</a></li>
+					<li><a href="#SCRR">Suspension Criteria And Resumption Requirements</a></li>
+					<li><a href="#Deliverables">Test Deliverables</a></li>
+					<li><a href="#Tasks">Testing Tasks</a></li>
+					<li><a href="#Env">Environmental Needs</a></li>
+					<li><a href="#Responsibilities">Responsibilities</a></li>
+					<li><a href="#Training">Staffing And Training Needs</a></li>
+					<li><a href="#Schedule">Schedule</a></li>
+					<li><a href="#Risk">Ricks And Contingencies</a></li>
+					<li><a href="#Approvals">Approvals</a></li>
 				</ul>
 			</div>
 		</div>
@@ -38,13 +38,13 @@
 				<div id="Introduction" class="panel">
 					<h3>Introduction</h3>
 					<p>
-						This plan specifies the communication of the test appoach to "Tic Tac Toe Game". It includes all objectives, scope, test schedule and approach. This document will clearly ifentify what test deliverables will be. 
+						This plan specifies the communication of the test approach to "Tic Tac Toe Game". It includes all objectives, scope, test schedule, and approach. This document will clearly identify what test deliverables will be.
 					</p>
 					<p>
-						In modern society, we have a various of users and they have a various of devices. This test plan will also provide information about how well is the game supported over all the plantform.
+						In modern society, we have a various of users and they have a various of devices. This test plan will also provide information about how well is the game supported over all the platform.
 					</p>
 					<p>
-						The whole testing will be mainly focus on three components, Unit testing, System Integration testing and Acceptance. The details of our test will be further defined in approach section and in level specific plans.
+						The whole testing will mainly focus on three components, Unit testing, Integration, and System Testing. The details of our test will be further defined in approach section and in level specific plans.
 					</p>
 				</div>
 			</li>
@@ -52,7 +52,7 @@
 				<div id="Test_Items" class="panel">
 					<h3>Test Items</h3>
 					<p>
-						The test in this document will include three major components, including game board layout which will also includes basic game logic, check win functionality, button functionality which includes start new game function, save a game function, load a game function and exit the game. 
+						The test in this document will include three major components, including game board layout which will also includes basic game logic, check win functionality, button functionality which includes starting new game function, save a game function, load a game function and exit the game.
 					</p>
 				</div>
 			</li>
@@ -60,13 +60,13 @@
 				<div id="Features_To_Be_Tested" class="panel">
 					<h3>Features To Be Tested</h3>
 					<p>
-						Feature that will be tested include game board layout, game logic, check the win conditions, load a game, save a game, start a new game and exit a game.
+						A feature that will be tested include game board layout, game logic, check the win conditions, load a game, save a game, start a new game and exit a game.
 					</p>
 					<p>
-						Also, pop up proper information when user clicks on certain buttons will also be tested. 
+						Also, pop up proper information when a user clicks on certain buttons will also be tested.
 					</p>
 					<p>
-						For a better reading expirience, we have extract and visualized all the features that need to be testd
+						For a better reading experience, we have extracted and visualized all the features that need to be tested
 					</p>
 					<div class="container-fluid">
 					<table class="table table-hover table-bordered">
@@ -97,14 +97,372 @@
 						For testing the whole system, we will be dividing testing into four major components, Unit testing, Intergration testing, System testing and acceptance testing.
 					</p>
 					<p>
-						Arguments for tests will only be the mouse clicks. The whole system does not require any keyboard input or other input devices. So base on this argument, if we receive expected result, we will consider it is passed.
+						Arguments for tests will only be the mouse clicks. The whole system does not require any keyboard input or other input devices. So base on this argument, if we receive expected results, we will consider it is passed.
 					</p>
 					<p>
-						It is expected that the appropiate symbol (cross or circle) will apear in the selected slot on the game board. When a player could get 3 of the symbols on a straigh line (horizontal, vertical or diangnal), there will be proper information displayed to the users. Save button is expected to save current game board and load buttong is expected to recover the saved game into current game board. In addition, any operation that will interept current game will arouse warning texts.
+						It is expected that the appropriate symbol (cross or circle) will appear in the selected slot on the game board. When a player could get 3 of the symbols on a straight line (horizontal, vertical or diagonal), there will be proper information displayed to the users. Save button is expected to save current game board and load button is expected to recover the saved game into the current game board. In addition, any operation that will interrupt current game will arouse warning texts.
 					</p>
 					<p>
-						To perform this test, there will be no additional dependencies. The test could be test on any devices that support browsers and javescript.
+						To perform this test, there will be no additional dependencies. The test could be tested on any devices that support browsers and javascript.
 					</p>
+					<hr>
+					<h4>Unit Testing</h4>
+					<p>
+						Here, each method will be tested independenly using browser. Each method will be checkd with syntax as well as logic test.
+					</p>
+					<div class="container-fluid">
+					<table class="table table-hover table-bordered">
+						<thead>
+							<tr>
+								<th>Test Items</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Statement Testing</td>
+						</tr>
+						<tr>
+							<td>Block Testing</td>
+						</tr>
+						</tbody>
+					</table>
+					</div>
+					<hr>
+					<h4>Intergration Testing</h4>
+					<p>
+						In this test stage, we will be grouping methods together that have been unit tested. All tested modules or methods will be grouped into components to perform a squence of actions. Each component will be given an argument and we will be testing if the output is expected.
+					<p>
+					<div class="container-fluid">
+					<table class="table table-hover table-bordered">
+						<thead>
+							<tr>
+								<th>Test Items</th>
+								<th>Argument(s)</th>
+								<th>Expected Result</th>	
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>Board Initiation</td>
+							<td>None</td>
+							<td>2-D array will be initialized and filled with 0s</td>
+						</tr>
+						<tr>
+							<td>Save Game</td>
+							<td>None</td>
+							<td>Message, save current game</td>
+						</tr>
+						<tr>
+							<td>Load Game</td>
+							<td>None</td>
+							<td>Message, load saved game</td>
+						</tr>
+						<tr>
+							<td>Exit Game</td>
+							<td>None</td>
+							<td>Message, Close current window</td>
+						</tr>
+						<tr>
+							<td>Swap player action</td>
+							<td>Mouse Click, player 1</td>
+							<td>player 2</td>
+						</tr>
+						<tr>
+							<td>Swap player action(2)</td>
+							<td>Mouse Click, player 2</td>
+							<td>player 1</td>
+						</tr>
+						<tr>
+							<td>Click on a cell</td>
+							<td>Mouse Click, player 1</td>
+							<td>Cell becomes cross, player 2</td>
+						</tr>
+						<tr>
+							<td>Click on a clicked cell</td>
+							<td>Mouse Click, player 1</td>
+							<td>None</td>
+						</tr>
+						<tr>
+							<td>Click on a clicked cell(2)</td>
+							<td>Mouse Click, player 2</td>
+							<td>None</td>
+						</tr>
+						<tr>
+							<td>End a Game</td>
+							<td>Mouse Click</td>
+							<td>None</td>
+						</tr>
+						<tr>
+							<td>3 symbols in a row</td>
+							<td>Mouse Click, player 1</td>
+							<td>Show win message, end game</td>
+						</tr>
+						<tr>
+							<td>3 symbols in a column</td>
+							<td>Mouse Click, player 1</td>
+							<td>Show win message, end game</td>
+						</tr>
+						<tr>
+							<td>3 symbols in a diagnal</td>
+							<td>Mouse Click, player 1</td>
+							<td>Show win message, end game</td>
+						</tr>
+						</tbody>
+					</table>
+					</div>
+					<hr>
+					<h4>System Testing</h4>
+					<p>
+						The system testing will be tested on all platforms that mainstream users use. All browsers tested will be using the system default browser.
+						<ul>
+							<li>Windows 10 - Edge</li>
+							<li>Windows 10 - Chrome</li>
+							<li>Windows 10 - Mozilla</li>
+							<li>Windows 8 - IE</li>
+							<li>Windows 7 - IE</li>
+							<li>MacOS - Safari</li>
+							<li>iPhone5-7 - Safari</li>
+							<li>Android - Internet Browser</li>
+						</ul>
+					</p>
+				</div>
+			<li>
+				<div id="IPFCriteria" class="panel">
+					<h3>Item Pass/Fail Criteria</h3>
+					<p>
+						Here will specify the conditions that must be satisfied. Critical functions that must work in the system should be identified. If there are any of the components fails, the system testing must be stopped.
+					</p>
+					<p>
+						All failures will be evaluated and categorized into several categories. By defining failures into categories and then identify if the test has been passed or not can give testers and decision makers a better overlook of the whole process of the project.
+
+					</p>
+					<ul>
+						<li>Category A: Serious system failure. Any Category A failure will cause the whole system test to stop.</li>
+						<li>Category B: Functionality failure. Category B failures are the failures that show the code is not working as we expected. For example, click on the board, but the symbol of the player does not change.</li>
+						<li>Category C: UI failure. This category holds all the interface failure. For instance, if the elements in the game do not show or show in the wrong place, it will be categorized here. C Failure generally will not cause the system test to stop.</li>
+						<li>Category D: failures might be areas where minor problems exist with the system.</li>
+					</ul>
+					<hr>
+					<p>
+						For unit test level:
+						<ul>
+							<li>all test cases should be completed.</li>
+							<li>90% of the test cases should be able to return expected results or be able to provide with the defects information.</li>
+							<li>Test coverage must be at least 90%</li>
+							<li>No Category A failure</li>
+							<li>Category B has less than 3 failure cases</li>
+						</ul>
+					</p>
+					<p>
+						For Integration test level:
+						<ul>
+							<li>all test cases should be completed. </li>
+							<li>90% of the test cases should pass</li>
+							<li>All test cases associated with critical functionality must pass.
+							<li>Test coverage must be at least 90%</li>
+							<li>All medium and high severity defects must be fixed</li>
+						</ul>
+					</p>
+					<p>
+						For System test level:
+						<ul>
+							<li>No Category A failure</li>
+							<li>Category B has no or 1 failures</li>
+							<li>Less than 3 failure in Category C</li>
+							<li>No more than 2 failure in Category D</li>
+						</ul>
+					</p>
+					<hr>
+					<h4></h4>
+				</div>
+			<li>
+				<div id="SCRR" class="panel">
+					<h3>Suspension Criteria And Resumption Requirements</h3>
+					<p>
+						Some criteria outlined in the previous section could be used to decide when to suspend the testing.
+						<div id="SvsR" class="container-fluid">
+							<table class="table table-hover table-bordered">
+							<thead><tr>
+								<th>Suspension Criteria</th>
+								<th>Resumption Requirements</th>
+							</tr></thead>
+							<tbody>
+								<tr>
+									<td>If any of the functionality fail and being categorized in Category A, the whole test will be suspended</td>
+									<td>Testing will be resumed if the programmers can downgrade the failure from Category A to C or D or completely fix it</td>
+								</tr>
+								<tr>
+									<td>Assigned test resources are not available when needed by the team, the test procedure will be halted</td>
+									<td>Testing will be resumed one the resources are available</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+					</p>
+				</div>
+			<li>
+				<div id="Deliverables" class="panel">
+					<h3>Test Deliverables</h3>
+					<p>
+						This section of the document will outline the items that must be delivered before the testing starts.
+					</p>
+					<p>	This should include the following:
+					<ul>
+						<li>Acceptance test plan</li>
+						<li>System/Integration test design</li>
+						<li>test cases</li>
+						<li>interface prototypes</li>
+					</ul>
+					</p>
+					<p>
+						After the testing is finished, the following items should be delivered.
+					<ul>
+						<li>test logs</li>
+					</ul>
+					</p>
+				</div>
+			<li>
+				<div id="Tasks" class="panel">
+					<h3>Testing Tasks</h3>
+					<div class="container-fluid">
+					<table class="table table-hover table-bordered">
+						<thead><tr>
+							<th>Task</th>
+							<th>Assign To</th>
+							<th>Status</th>
+						</tr></thead>
+						<tbody>
+						<tr>
+							<td>Conduct Test Cases</td>
+							<td>TM, PM, Dev</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create Acceptance Test Plan</td>
+							<td>TM, PM, Client</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create System/Integration Test Plan</td>
+							<td>TM, PM, Dev</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Define Interface Prototype</td>
+							<td>Dev, TM, Client</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Test Log</td>
+							<td>TM</td>
+							<td></td>
+						</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+			<li>
+				<div id="Env" class="panel">
+					<h3>Environmental Needs</h3>
+					<p>These are the pre-conditions for the testing. </p>
+					<hr>
+					<h4>Hardware</h4>
+					<p>This game is made by html+js, our final tests will be testing the app over several platforms. To reach the highest capability with the mainstream devices, we will need:
+						<ul>
+							<li>A windows computer</li>
+							<li>A mac</li>
+							<li>An iPhone</li>
+							<li>An iPad</li>
+							<li>An Android Phone</li> 
+						</ul>
+					<hr>
+					<h4>Software</h4>
+					<p>
+						To make sure that the app can run correctly on the most devices, we need all kinds of popular browsers. And VMWare software is also needed to simulator the result under different windows versions
+						<ul>
+							<li>VMWare</li>
+							<li>Chrome</li>
+							<li>Mozilla Firefox</li>
+							<li>Microsoft Edge</li>
+							<li>Safari</li>
+						</ul>
+					</p>
+				</div>
+			<li>
+				<div id="Responsibilities" class="panel">
+					<h3>Responsibilities</h3>
+					<p>
+					<div class="container-fluid">
+					<table class="table table-hover table-bordered">
+						<thead><tr>
+							<th></th>
+							<th>TM</th>
+							<th>PM</th>
+							<th>Dev</th>
+							<th>Test Team</th>
+							<th>Client</th>
+						</tr></thead>
+						<tbody>
+						<tr>
+							<td>Conduct Test Cases</td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Create Acceptance Test Plan</td>
+							<td>X</td>
+							<td>X</td>
+							<td></td>
+							<td>X</td>
+							<td>X</td>
+						</tr>
+						<tr>
+							<td>Create System/Integration Test Plan</td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Define Interface Prototype</td>
+							<td>X</td>
+							<td></td>
+							<td>X</td>
+							<td>X</td>
+							<td>X</td>
+						</tr>
+						<tr>
+							<td>Test Log</td>
+							<td>X</td>
+							<td></td>
+							<td></td>
+							<td>X</td>
+							<td></td>
+						</tr>
+						</tbody>
+					</table>
+					</div>
+					</p>
+				</div>
+			<li>
+				<div id="Training" class="panel">
+					<h3>Staffing And Training Needs</h3>
+					<p>
+						It is suggested that there will be at least 1 full time tester assigned to the unit, integration and system test.
+					</p>
+					<p>
+						Because this app is relatively simple and easy, most end users are familiar with the concept and the rules of tic tac toe, therefore it not require any additional knowledge to use this app. 
+					</p>
+				</div>
+			<li>
+				<div id="Schedule" class="panel">
+					<h3>Schedule</h3>
+					<p>
+					For the testing activities, date and time have been allocated within the plan. In addition, the suggested durations for each activity are also shown in the table below.
 					<div id="schedule" class="container-fluid">
 					<table class="table table-hover table-bordered">
 						<thead><tr>
@@ -116,103 +474,85 @@
 						<tbody>
 						<tr>
 							<td>Making Test Plan</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>7 Oct 2016</td>
+							<td>7 Oct 2016</td>
+							<td>12 Oct 2016</td>
 						</tr>
 						<tr>
 							<td>Unit Testing: 2 Days</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>15 Oct 2016</td>
+							<td>15 Oct 2016</td>
+							<td>17 Oct 2016</td>
 						</tr>
 						<tr>
 							<td>Intergration Testing: 2 Days</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>18 Oct 2016</td>
+							<td>18 Oct 2016</td>
+							<td>20 Oct 2016</td>
 						</tr>
 						<tr>
-							<td>Acceptance Testing: 1 Day</td>					
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>System Testing: 2 Days</td>
+							<td>20 Oct 2016</td>
+							<td>20 Oct 2016</td>
+							<td>21 Oct 2016</td>
 						</tr>
 						<tr>
 							<td>Test Evaluation: 1 Day</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>22 Oct 2016</td>
+							<td>21 Oct 2016</td>
+							<td>22 Oct 2016</td>
 						</tr>
 						<tr>
 							<td>Launch Product</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td>25 Oct 2016</td>
+							<td>23 Oct 2016</td>
+							<td>23 Oct 2016</td>
 						</tr>
 						</tbody>
 					</table>
 					</div>
-				</div>
-			<li>
-				<div class="panel">
-					<h3>Item Pass/Fail Criteria</h3>
-					<p>
 					</p>
 				</div>
 			<li>
-				<div class="panel">
-					<h3>Suspension Criteria And Resumption Requirements</h3>
+				<div id="Risk" class="panel">
+					<h3>Risks And Contingencies</h3>
+					<h4>A. Limited dev staff</h4>
+					<p>This project is outsourcing to a student group in South Africa. And it is a relatively small team. It will have secious delay if we need the dev team to review approperate documentations as well as fixing any found bugs.
+					</p>
+					<h4>B. Extremely busy client</h4>
 					<p>
+						Clients of this project are extremely busy and could not attend a meeting on a weekly basis. Sometimes we have to communicate with the client over the phone. In this case, it may be quite hard for the client to review the documentation when the documentation is ready and the whole procedure will be halted because of that.
 					</p>
 				</div>
 			<li>
-				<div class="panel">
-					<h3>Test Deliverables</h3>
-					<p>
-					</p>
-				</div>
-			<li>
-				<div class="panel">
-					<h3>Testing Tasks</h3>
-					<p>
-					</p>
-				</div>
-			<li>
-				<div class="panel">
-					<h3>Environmental Needs</h3>
-					<p>
-					</p>
-				</div>
-			<li>
-				<div class="panel">
-					<h3>Responsibilities</h3>
-					<p>
-					</p>
-				</div>
-			<li>
-				<div class="panel">
-					<h3>Staffing And Training Needs</h3>
-					<p>
-					</p>
-				</div>
-			<li>
-				<div class="panel">
-					<h3>Schedule</h3>
-					<p>
-					</p>
-				</div>
-			<li>
-				<div class="panel">
-					<h3>Ricks And Contingencies</h3>
-					<p>
-					</p>
-				</div>
-			<li>
-				<div class="panel">
+				<div id="Approvals" class="panel">
 					<h3>Approvals</h3>
-					<p>
-					</p>
+					<div id="schedule" class="container-fluid">
+					<table class="table table-hover table-bordered">
+						<tbody>
+						<tr>
+							<td>Project Sponsor</td>
+							<td>_______________</td>
+						</tr>
+						<tr>
+							<td>Development Management</td>
+							<td>_______________</td>
+						</tr>
+						<tr>
+							<td>Project Manager</td>
+							<td>_______________</td>
+						</tr>
+						<tr>
+							<td>Team Manager</td>
+							<td>_______________</td>
+						</tr>
+						<tr>
+							<td>Client</td>
+							<td>_______________</td>
+						</tr>
+						</tbody>
+					</table>
+					</div>
 				</div>
 			</li>
 		</ul>
